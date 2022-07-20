@@ -1,3 +1,4 @@
+
 import { Component, OnInit, Input } from "@angular/core";
 import { welcomeAnimationType } from "./welcome-animation-type";
 
@@ -8,7 +9,7 @@ import { welcomeAnimationType } from "./welcome-animation-type";
 })
 export class welcomeScreenComponent implements OnInit {
   windowWidth: string;
-  welcomeTransition: string;
+  WelcomeTransition: string;
   opacityChange: number = 1;
   showwelcome = true;
 
@@ -33,7 +34,7 @@ export class welcomeScreenComponent implements OnInit {
           this.opacityChange = 0;
       }
 
-      this.welcomeTransition = transitionStyle;
+      this.WelcomeTransition = transitionStyle;
 
       setTimeout(() => {
         this.showwelcome = !this.showwelcome;
