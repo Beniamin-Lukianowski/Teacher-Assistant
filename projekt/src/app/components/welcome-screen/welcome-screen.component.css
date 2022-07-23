@@ -1,5 +1,5 @@
 .app-welcome-screen {
-    background: #d1367d;
+    background: rgb(163,214,245);
     position: fixed;
     top: 0;
     left: 0;
@@ -29,7 +29,7 @@
   }
   
   .app-logo {
-    background: url("./../../../assets/lighty.svg");
+    background: url("./../../../assets/studying.png");
     background-repeat: no-repeat;
     max-width: 100%;
     background-position: center;
