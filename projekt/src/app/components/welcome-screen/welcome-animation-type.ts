@@ -1,5 +1,5 @@
 export enum welcomeAnimationType {
-    SlideLeft= "slide-left",
-    SlideRight = "slide-right",
-    FadeOut = "fade-out"
+    SlideLeft= 1,
+    SlideRight = 2,
+    FadeOut = 3
 }

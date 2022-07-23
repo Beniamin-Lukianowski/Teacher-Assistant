@@ -9,7 +9,7 @@ import { welcomeAnimationType } from "./welcome-animation-type";
 })
 export class welcomeScreenComponent implements OnInit {
   windowWidth: string;
-  WelcomeTransition: string;
+  welcomeTransition: string;
   opacityChange: number = 1;
   showwelcome = true;
 
@@ -34,7 +34,7 @@ export class welcomeScreenComponent implements OnInit {
           this.opacityChange = 0;
       }
 
-      this.WelcomeTransition = transitionStyle;
+      this.welcomeTransition = transitionStyle;
 
       setTimeout(() => {
         this.showwelcome = !this.showwelcome;
