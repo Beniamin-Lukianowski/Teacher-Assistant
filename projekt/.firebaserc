@@ -1,0 +1,22 @@
+{
+  "projects": {
+    "default": "assistantscratches"
+  },
+  "targets": {
+    "assistantscratches": {
+      "hosting": {
+        "assistantscratches": [
+          "https://assistantscratches.web.app/"
+        ],
+        "app": [
+          "assistantscratches.web.app",
+          "teacher-assistant"
+        ],
+        "projekt": [
+          "assistantscratches"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

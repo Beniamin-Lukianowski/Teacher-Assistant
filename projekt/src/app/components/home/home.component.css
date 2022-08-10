@@ -82,7 +82,7 @@ div.menu-panel {
 }
 
 
-.menu-panel li:first-child {
+.menu-panel li {
   font-size: 1.3em;
   margin-left: -10px;
 }
@@ -98,7 +98,7 @@ div.menu-panel {
   color: #FFAB91;
 }
 
-.menu-links li:first-child:hover a {
+.menu-links li:hover a {
   color: black;  
   background-color: #FFAB91;
 }
@@ -112,11 +112,11 @@ display: block;
   
 }
 
-.menu-links li:first-child:hover #QC-info {
+.menu-links li:hover #QC-info {
 opacity: 1;
 }
 
-.menu-links li:first-child:hover #DC-info {
+.menu-links li:hover #DC-info {
 opacity: 1;
 }
 
@@ -129,7 +129,7 @@ display: block;
 }
 
 
-.menu-links li:first-child a {
+.menu-links li a {
   padding: 5px;
 }
 
