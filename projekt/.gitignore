@@ -39,11 +39,12 @@ testem.log
 
 # System files
 .DS_Store
-Thumbs.db
+Thumbs.db git filter-repo --path secrets.yml --invert-paths HEAD
 
 # Firebase
 .firebase
 *-debug.log
 .runtimeconfig.json
-package-lock.json
-package.json
+*.json 
+
+
