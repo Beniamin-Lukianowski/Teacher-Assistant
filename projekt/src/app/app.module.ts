@@ -23,6 +23,8 @@ import { environment } from 'src/environments/environment';
 import {MatNativeDateModule} from '@angular/material/core';
 import { Switch } from './switch/switch.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,9 +36,11 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle'
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
+    BrowserAnimationsModule,
     CommonModule,
     MatSlideToggleModule ,
     AngularFirestoreModule,
+    MatCheckboxModule,
     MatNativeDateModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
@@ -46,7 +50,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle'
     
   ],
   exports: [
-    MatSlideToggleModule 
+    AppRoutingModule
 ],
   providers: [AuthService],
   bootstrap: [AppComponent]
