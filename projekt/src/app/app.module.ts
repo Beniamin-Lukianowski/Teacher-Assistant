@@ -13,7 +13,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
-import { AuthService } from "./shared/services/auth.service";
+import { AuthService } from './components/shared/services/auth.service';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,18 +21,20 @@ import { welcomeScreenComponent } from './components/welcome-screen/welcome-scre
 import { HomeComponent } from './components/home/home.component';
 import { environment } from 'src/environments/environment';
 
-
+import { SwitchComponent } from './switch/switch.component';
 @NgModule({
   declarations: [
     AppComponent,
     welcomeScreenComponent,
     HomeComponent,
+    SwitchComponent,
     
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
     AngularFirestoreModule,
+    
     AngularFireStorageModule,
     AngularFireDatabaseModule,
     BrowserModule,  
