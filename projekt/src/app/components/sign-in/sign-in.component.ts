@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { AuthService } from "../../components/shared/services/auth.service";
-
+import { AppModule } from 'src/app/app.module';
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
@@ -12,3 +12,4 @@ export class SignInComponent implements OnInit {
   ) { }
   ngOnInit() { }
 }
+

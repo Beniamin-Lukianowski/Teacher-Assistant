@@ -14,27 +14,30 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { AuthService } from './components/shared/services/auth.service';
-
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { welcomeScreenComponent } from './components/welcome-screen/welcome-screen.component';
 import { HomeComponent } from './components/home/home.component';
 import { environment } from 'src/environments/environment';
-
-import { SwitchComponent } from './switch/switch.component';
+import {MatNativeDateModule} from '@angular/material/core';
+import { Switch } from './switch/switch.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle'
 @NgModule({
   declarations: [
     AppComponent,
     welcomeScreenComponent,
     HomeComponent,
-    SwitchComponent,
+    Switch,
     
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireAuthModule,
+    CommonModule,
+    MatSlideToggleModule ,
     AngularFirestoreModule,
-    
+    MatNativeDateModule,
     AngularFireStorageModule,
     AngularFireDatabaseModule,
     BrowserModule,  
@@ -42,6 +45,9 @@ import { SwitchComponent } from './switch/switch.component';
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     
   ],
+  exports: [
+    MatSlideToggleModule 
+],
   providers: [AuthService],
   bootstrap: [AppComponent]
 })

@@ -16,14 +16,12 @@
         <div class="formGroup">
           <input type="text" class="formControl" placeholder="Adres Email" #userEmail required>
         </div>
+       
         <div class="formGroup">
           <input type="text" class="formControl" placeholder="Username" #userName required>
         </div>
-        <div [ngSwitch]="data.type">
-          <div *ngSwitchDefault>FORM 1</div>
-          <div *ngSwitchCase="'range'">FORM 2</div>
-        </div>
-        
+     
+        <mat-slide-toggle>Slide me!</mat-slide-toggle>
         
         <div class="formGroup">
           <input type="button" class="btn btnPrimary" value="Log in" (click)="authService.SignIn(userName.value, userPassword.value)">
